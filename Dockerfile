@@ -1,12 +1,11 @@
-FROM ppodgorsek/robot-framework
+FROM gliderlabs/alpine:3.3
 
-RUN apt update
-RUN apt install bash py-pip firefox xvfb dbus chromium chromium-chromedriver
+RUN apk-install bash py-pip firefox xvfb dbus chromium chromium-chromedriver
 RUN pip install --upgrade pip
 RUN pip install robotframework
 RUN pip install robotframework-selenium2library
 
-COPY *.robot /usr/robot
+ADD run.sh /usr/local/bin/run.sh
+RUN chmod +x /usr/local/bin/run.sh
 
-CMD ["robot testcase.robot"]
-
+CMD ["run.sh"]

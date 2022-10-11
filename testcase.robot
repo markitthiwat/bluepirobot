@@ -1,5 +1,5 @@
 *** Settings ***
-Library    Selenium2Library
+Library    SeleniumLibrary
 Resource    resource.robot
 
 *** Test Cases ***
