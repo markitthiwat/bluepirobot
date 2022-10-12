@@ -1,11 +1,7 @@
-FROM gliderlabs/alpine:3.3
+FROM ubuntu:18.04
 
-RUN apk-install bash py-pip firefox xvfb dbus chromium chromium-chromedriver
-RUN pip install --upgrade pip
+RUN 
 RUN pip install robotframework
 RUN pip install robotframework-selenium2library
 
-ADD run.sh /usr/local/bin/run.sh
-RUN chmod +x /usr/local/bin/run.sh
-
-CMD ["run.sh"]
+COPY *.robot usr/usr
