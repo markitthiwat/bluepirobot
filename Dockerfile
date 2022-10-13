@@ -37,7 +37,7 @@ RUN tar -xvf ta-lib-0.4.0-src.tar.gz
 RUN /bin/bash -c "cd ta-lib/; ./configure --prefix=/usr; make; make install"
 
 # Install pip packages
-COPY requirements.txt ./
+#COPY requirements.txt ./
 RUN pip install -r requirements.txt
 
 # Set working directory for code
