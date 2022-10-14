@@ -3,34 +3,20 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${browser}    chrome
-${url}    https://www.azuki.com
+${url}    https://abhigyank.github.io/To-Do-List/
 ${delay}    1
 
 *** Keywords ***
-Open Azuki Website
+Open Website
     Open Browser    ${url}    ${browser}
     Maximize Browser Window
     Set Selenium Speed    ${delay}
 
-Check Azuki Should be Home Page
-    Title Should Be    Azuki
+Check Website Should be Home Page
+    Title Should Be    To-Do List
 
-Click to World Navigator
-    Click Element    //*[@id="__next"]/div[1]/div/div[2]/ul/li[3]/a
-    Set Selenium Speed    ${delay}
+Check To-Do Task Nav
 
-Verify Azuki should be world page
-    Title Should Be    Azuki
+Check Completed Nav
 
-Click to Alley Story
-    Click Element    //*[@id="__next"]/main/div[1]/div/div/div[1]/div[2]/div[2]/div/h3[2]/span
-    Set Selenium Speed    2
-
-Going to Alley Story Page 2
-    Click Element    //*[@id="__next"]/main/div[1]/div[5]/div/div/div
-
-Going to Alley Story Page 3
-    Click Element    //*[@id="__next"]/main/div[1]/div[5]/div/div/div
-
-Going to Alley Story Final Page
-    Click Element    //*[@id="__next"]/main/div[1]/div[5]/div/div/div
+Check Add Icon
