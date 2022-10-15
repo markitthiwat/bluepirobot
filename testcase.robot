@@ -1,20 +1,33 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    resource.robot
+Resource    resource/additem.robot
+Resource    resource/todotask.robot
+Resource    resource/completed.robot
 
 *** Test Cases ***
 Open Website and check the Website should be home page
     Open Website
     Check Website Should be Home Page
 
-Create New Task
-    Create Task1 and click the add bottom
+Create Task1
+    Create Task1
+    Click Add Bottom
 
-Check To-Do Task
-    Check To-Do Task Nav for Approve Task1
+Create Task2
+    Create Task2
+    Click Add Bottom
 
-Check Complete
-    Check Completed Nav
+Going To-Do Task
+    Going to To-Do Task
 
-Close Browser
-    Close Browser
+Checkbox Task1 at To-Do Task
+    Click Checkbox Task1 at To-Do Task
+
+Delete Task2 at To-Do Task
+    Delete Task2 at To-Do Task
+
+Going to Completed 
+    Going Completed Nav
+
+Delete Completed Task1
+    Delete Complete Task1
