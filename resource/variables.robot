@@ -4,4 +4,4 @@ Library    SeleniumLibrary
 *** Variables ***
 ${browser}    chrome
 ${url}    https://abhigyank.github.io/To-Do-List/
-${delay}    1
+${delay}    0.25

@@ -20,12 +20,6 @@ Create Task2
 Going To-Do Task
     Going to To-Do Task
 
-Verify Task1 at To-Do Task
-    Check Task1 on To-Do Task
-    
-Verify Task2 at To-Do Task
-    Check Task2 on To-Do Task
-
 Checkbox Task1 at To-Do Task
     Click Checkbox Task1 at To-Do Task
 
@@ -34,12 +28,14 @@ Delete Task2 at To-Do Task
 
 Going to Completed 
     Going Completed Nav
-
-Verify Task1 at Completed
-    Check Task1 at Completed
-
 Delete Completed Task1
     Delete Complete Task1
+
+Back to To-Do Task
+    Going to To-Do Task
+
+Back to Add Item
+    Going to Add Item
 
 Close Browser
     Close Browser
